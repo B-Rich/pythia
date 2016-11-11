@@ -3,7 +3,7 @@
 [![Issue Count](https://codeclimate.com/repos/581760cdbe815c29e20045b5/badges/c73deabc9bfe6628467c/issue_count.svg)](https://codeclimate.com/repos/581760cdbe815c29e20045b5/feed)
 
 
-![Kreskin](https://github.com/IcaliaLabs/kreskin/blob/master/kreskin.png "Kreskin")
+-> ![Kreskin](https://github.com/IcaliaLabs/kreskin/blob/master/kreskin.png "Kreskin") <-
 
 Watson Personality Insights Ruby wrapper
 
