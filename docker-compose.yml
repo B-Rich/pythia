@@ -7,7 +7,7 @@ volumes:
 services:
   test: &base
     image: ruby:2.3.1
-    entrypoint: /usr/src/app/test-entrypoint.sh  
+    entrypoint: /usr/src/app/test-entrypoint.sh
     command: bundle exec guard start --no-bundler-warning --no-interactions
     working_dir: /usr/src/app
     volumes:
@@ -18,7 +18,7 @@ services:
 
   app:
     <<: *base
-    entrypoint: /usr/src/app/development-entrypoint.sh  
+    entrypoint: /usr/src/app/development-entrypoint.sh
     command: bash
     env_file:
       - dev.env

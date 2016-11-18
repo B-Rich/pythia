@@ -3,11 +3,11 @@
 [![Issue Count](https://codeclimate.com/repos/581760cdbe815c29e20045b5/badges/c73deabc9bfe6628467c/issue_count.svg)](https://codeclimate.com/repos/581760cdbe815c29e20045b5/feed)
 
 
-![Kreskin](https://github.com/IcaliaLabs/kreskin/blob/master/kreskin.png "Kreskin")
+![Pythia](https://github.com/IcaliaLabs/pythia/blob/master/pythia.png "Pythia")
 
 Watson Personality Insights Ruby wrapper
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/kreskin`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pythia`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
 
@@ -16,7 +16,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'kreskin'
+gem 'pythia'
 ```
 
 And then execute:
@@ -25,7 +25,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install kreskin
+    $ gem install pythia
 
 ## Usage
 
