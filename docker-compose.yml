@@ -19,6 +19,8 @@ services:
   app:
     <<: *base
     entrypoint: /usr/src/app/development-entrypoint.sh
-    command: bash
+    ports:
+      - 80:80
+    command: irb
     env_file:
       - dev.env
