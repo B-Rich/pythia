@@ -3,6 +3,7 @@ module Pythia
     attr_reader :word_count, :processed_language, :personality
                 :needs, :values, :behavior, :consumption_preferences
                 :warnings
+
     def initialize(params)
       @word_count = params[:word_count]
       @processed_language = params[:processed_language]
