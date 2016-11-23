@@ -6,7 +6,10 @@ volumes:
 
 services:
   test: &base
-    image: ruby:2.3.1
+    image: thelastinuit/ultron:test_v.1.0.0
+    build:
+      context: .
+      dockerfile: dev.Dockerfile  
     entrypoint: /usr/src/app/test-entrypoint.sh
     command: bundle exec guard start --no-bundler-warning --no-interactions
     working_dir: /usr/src/app
@@ -18,9 +21,16 @@ services:
 
   app:
     <<: *base
+    image: thelastinuit/ultron:dev_v.1.0.0
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
     entrypoint: /usr/src/app/development-entrypoint.sh
     ports:
       - 80:80
+      - 8080:8080
+      - 62222:62222
+      - 60001:60001  
     command: irb
     env_file:
       - dev.env
