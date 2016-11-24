@@ -2,7 +2,7 @@ module Pythia
   class Insight < Olimpo::Base
     class << self
       def profile(params = {})
-        response = post("/v3/profile",
+        response = post("/v3/profile?version=2016-10-20&consumption_preferences=true&raw_scores=true",
                         body: params,
                         headers: {
                           "Accept" => "application/json",
@@ -11,7 +11,7 @@ module Pythia
 
         raise_exception response.code, response.body unless response.success?
 
-        Insight::Profile.new(response.body)
+        Pythia::Profile.new(response.body)
       end
     end
   end
