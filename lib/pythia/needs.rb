@@ -1,30 +1,37 @@
 module Pythia
   class Needs
+    attr_reader :traits
+
     def initialize(params)
+      @params = params
+      @traits = []
+
+      load_traits
+    end
+
+    def list
+      @traits.map &:name
     end
 
     private
 
-    class Trait
-      attr_reader :percentile, :raw_score
-
-      def initialize(params)
-        @percentile = params[:percentile]
-        @raw_score = params[:raw_score]
+    def load_traits
+      @params.each do |hash|
+        @traits << Trait.new hash
       end
     end
 
-    class Facets
+    class Trait
+      attr_reader :name, :percentile, :raw_score
+
       def initialize(params)
-        @params = params
+        @name = params[:name]
+        @percentile = params[:percentile]
+        @raw_score = params[:raw_score]
       end
 
       def to_a
-        return [] unless @params
-
-        @params.map do |facet|
-          [facet.to_sym, facet[:percentile], facet[:raw_score]]
-        end
+        [@name.to_sym, @percentile, @raw_score]
       end
     end
   end

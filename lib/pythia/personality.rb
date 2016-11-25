@@ -1,13 +1,13 @@
 module Pythia
   class Personality
-    attr_reader :openness, :conscientiousness
-    :extraversion, :agreeableness
+    attr_reader :openness, :conscientiousness,
+    :extraversion, :agreeableness,
     :neuroticism
 
     def initialize(params)
       params.each do |big_five|
         traits.each do |trait|
-          instance_variable_set("@#{trait}") = Trait.new(big_five)
+          instance_variable_set "@#{trait}", Trait.new(big_five)
         end
       end
     end

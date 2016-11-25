@@ -11,7 +11,7 @@ module Pythia
 
         raise_exception response.code, response.body unless response.success?
 
-        Pythia::Profile.new(response.body)
+        Pythia::Profile.new JSON.parse(response.body)
       end
     end
   end
