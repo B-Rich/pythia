@@ -1,15 +1,16 @@
 [![Code Climate](https://codeclimate.com/repos/581760cdbe815c29e20045b5/badges/c73deabc9bfe6628467c/gpa.svg)](https://codeclimate.com/repos/581760cdbe815c29e20045b5/feed)
 [![Test Coverage](https://codeclimate.com/repos/581760cdbe815c29e20045b5/badges/c73deabc9bfe6628467c/coverage.svg)](https://codeclimate.com/repos/581760cdbe815c29e20045b5/coverage)
 [![Issue Count](https://codeclimate.com/repos/581760cdbe815c29e20045b5/badges/c73deabc9bfe6628467c/issue_count.svg)](https://codeclimate.com/repos/581760cdbe815c29e20045b5/feed)
+![Made with Love by Icalia Labs](https://img.shields.io/badge/With%20love%20by-Icalia%20Labs-ff3434.svg)
 
 
-![Pythia](https://github.com/IcaliaLabs/pythia/blob/master/pythia.png "Pythia")
+<div style="text-align:center">
+  <img src="assets/logo.png" width="980">
+</div>
 
-Watson Personality Insights Ruby wrapper
+Pythia is an open source ruby gem that acts as a wrapper for IBM Watson's [Personality Insights
+service API](https://www.ibm.com/watson/services/personality-insights/).
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pythia`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
