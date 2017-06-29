@@ -1,6 +1,6 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
-$:.unshift(lib) unless $:.include?(lib)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'pythia/version'
 
 Gem::Specification.new do |spec|

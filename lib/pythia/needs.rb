@@ -17,7 +17,7 @@ module Pythia
 
     def load_traits
       @params.each do |hash|
-        @traits << Trait.new hash
+        @traits << Trait.new(hash)
       end
     end
 
