@@ -10,7 +10,7 @@ module Pythia
     end
 
     def list
-      @traits.map &:name
+      @traits.map(&:name)
     end
 
     private
