@@ -11,6 +11,7 @@ module Pythia
 
     def list
       @messages.map(&:warning_id)
+
     end
 
     private
