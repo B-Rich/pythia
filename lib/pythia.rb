@@ -6,6 +6,7 @@ require "pythia/needs"
 require "pythia/values"
 require "pythia/behavior"
 require "pythia/consumption_preferences"
+require "pythia/warnings"
 
 module Pythia
   extend Olimpo
